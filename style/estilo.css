@@ -1,0 +1,118 @@
+body {
+    background-color: #28364e;
+}
+/* Header */
+header {
+    width: 100%;
+    padding-bottom: 15px;
+    background-color: #0a0d14;
+    border-radius: 15px;
+    border: 1px solid #556ff7;
+}
+/* Logo-Menú-Inicio sesión-Carro */
+.header__div:first-child a > img {
+    width: 10rem;
+    object-fit: cover;
+    background-color: #ffffff;
+    border-radius: 80px;
+    border: 2px solid #556ff7;
+    margin-top: 15px;
+}
+.header__div:first-child {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "a a b b"
+        "c c d d";
+}
+.header__div:first-child > a:first-child {
+    justify-self: right;
+    grid-area: a;
+}
+.header__div:first-child > a:nth-child(2) {
+    justify-self: right;
+    grid-area: b;
+    color: #ffffff;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+.header__div:first-child > a:nth-child(4) {
+    justify-self: left;
+    grid-area: c;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0 15px 15px;
+}
+.header__div:first-child > a:last-child {
+    justify-self: right;
+    grid-area: d;
+    color: #ffffff;
+    margin-right: 15px;
+    padding-bottom: 15px;
+}
+.header__div:first-child > nav {
+    display: none;
+}
+/* Buscador de producto */
+.header__div:last-child {
+    width: 95%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #556ff7; 
+    background-color: #ffffff;  
+    display: flex;
+    align-items: center;
+}
+.header__div:last-child > svg {
+    color: #556ff7;
+    margin: 8px 4px;
+}
+.header__div:last-child > svg path {
+    fill: #556ff7;
+}
+.header__div:last-child > input {
+    border-style: none;
+}
+
+@media screen and (min-width:769px) {
+    /* Logo-Menú-Inicio sesión-Carro */
+    .header__div:first-child a > img {
+        margin-bottom: 15px;
+    }
+    .header__div:first-child > a:nth-child(2) {
+        display: none;
+    }
+    .header__div:first-child {
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+            "a a d d c c"
+            "a a b b b b";
+    }
+    .header__div:first-child > nav {
+        display: inline-block;
+        grid-area: d;
+    }
+    .header__div:first-child > a:first-child {
+        justify-self: center;
+    }
+    .header__div:first-child > a:nth-child(4) {
+        justify-self: center;
+        color: #ffffff;
+        text-decoration: none;
+        margin: 15px 0 0 0;
+    }
+    .header__div:first-child > a:last-child {
+        justify-self: right;
+        grid-area: d;
+        color: #ffffff;
+        margin: 15px 0 0 0;
+    }
+}

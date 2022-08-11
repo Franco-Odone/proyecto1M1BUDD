@@ -1,4 +1,4 @@
-body {
+#body {
     background-color: #28364e;
     font-family: 'Oswald', sans-serif;
     min-width: fit-content;
@@ -76,8 +76,15 @@ header {
 .header__div > .header__div-div > svg path {
     fill: #556ff7;
 }
-.header__div > .header__div-div > input {
+.header__div > .header__div-div > form {
+    width: 100%;
+}
+.header__div > .header__div-div > form > input {
     border-style: none;
+    width: 100%;
+}
+.header__div > .header__div-div > form > input:focus {
+    outline: none;
 }
 
 /* Nav */
@@ -130,6 +137,10 @@ header {
         justify-self: center;        
         margin: 20px 0 0 0;
         font-size: 1.2rem;
+        transition: color 0.5s;
+    }
+    .header__div > a:nth-child(2):hover {
+        color: #556ff7;
     }
     .header__div > .icon1 {
         margin: 20px 0 0 0;
@@ -151,6 +162,12 @@ header {
         align-self: flex-end;
         margin-bottom: 20px;
         font-size: 1.2rem;
+    }
+    .header__div > nav > a {
+        transition: color 0.5s;
+    }
+    .header__div > nav > a:hover {
+        color: #556ff7;
     }
 }
 
@@ -227,6 +244,9 @@ main {
     color: #556ff7;
     font-size: 1.1rem;
 }
+.jumbotron > .form-container > form div > input:focus {
+    outline: none;
+}
 .jumbotron > .form-container > form div > button {
     border: 2px solid #556ff7;
     background-color: #28364e;
@@ -292,7 +312,13 @@ main {
     }
     .jumbotron > .form-container > form div > button {
         font-size: 1.2rem;
+        transition: all 0.5s;
     }
+    .jumbotron > .form-container > form div > button:hover {
+        color: #28364e;
+        background-color: #556ff7;
+        border-color: #28364e;
+    } 
     .jumbotron > .form-container > form > p {
         font-size: medium;
     }
@@ -405,6 +431,7 @@ main {
 /* Sección de Marcas */
 
 .marcas {
+    box-sizing: border-box;
     padding: 0;
     border-top: 2px solid #556ff7;
     margin-top: 15px;
@@ -421,7 +448,7 @@ main {
     font-size: 2.5rem;
     text-align: center;
 }
-.marcas > div > button {
+.marcas > div > #button > button {
     border: 2px solid #556ff7;
     background-color: #28364e;
     margin-top: 15px;
@@ -462,8 +489,14 @@ main {
         padding-right: 10px;
         padding-left: 10px;
     }
-    .marcas > div > button {
+    .marcas > div > #button > button {
         font-size: 1.4rem;
+        transition: all 0.5s;
+    }
+    .marcas > div > #button > button:hover {
+        color: #28364e;
+        border-color: #28364e;
+        background-color: #556ff7;
     }
     .marcas > .imagenGrid {
         --gap: 16px;
@@ -479,10 +512,11 @@ footer {
     min-width: fit-content;
     border-radius: 15px;
     border: 1px solid #556ff7;
-    margin: 15px 0 5px 0;
+    margin: 10px 0 5px 0;
     padding-bottom: 10px;
 }
 footer > .footer__div {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -547,6 +581,10 @@ footer > .footer__div > .footer__div-div > .redes a {
     }
     footer > .footer__div > .footer__div-div ul li a {
         font-size: 1.2rem;
+        transition: color 0.5s;
+    }
+    footer > .footer__div > .footer__div-div ul li a:hover {
+        color: #ffffff;
     }
     footer > .footer__div > .footer__div-div:nth-child(2) > ul li {
         font-size: 1.2rem;
@@ -556,5 +594,12 @@ footer > .footer__div > .footer__div-div > .redes a {
         border: 4px double #556ff7;
         border-radius: 15px;
         padding: 10px;
+    }
+    footer > .footer__div > .footer__div-div > .redes a {
+        transition: all 0.5s;
+    } 
+    footer > .footer__div > .footer__div-div > .redes a:hover {
+        color: #28364e;
+        background-color: #556ff7;
     }
 }

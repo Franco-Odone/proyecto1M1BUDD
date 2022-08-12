@@ -342,7 +342,8 @@ main {
     grid-template-areas: 
     "a a a a"
     "b b b b"
-    "c c c c";
+    "c c c c"
+    "d d d d";
 }
 .catálogo > h2 {
     grid-area: a;
@@ -350,6 +351,8 @@ main {
     margin-top: 15px;
     font-size: 2.5rem;
     text-align: center;
+    align-self: center;
+    justify-self: center;
 }
 .catálogo > .categoriaDeProductos {
     grid-area: b;
@@ -363,6 +366,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .catálogo > .categoriaDeProductos .categorias img {
     width: 150px;    
@@ -373,8 +377,16 @@ main {
 
 /* Sección Productos */
 
-.catálogo > .productos {
+.catálogo > .destacados {
     grid-area: c;
+    color: #ffffff;
+    align-self: center;
+    justify-self: center;
+    font-size: 2.5rem;
+
+}
+.catálogo > .productos {
+    grid-area: d;
 }
 .catálogo > .productos .caja1, .caja2, .caja3, .caja4  {
     border: 2px solid #556ff7;
@@ -417,9 +429,19 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+    .catálogo > .destacados {
+        margin: 0 0 15px 0;
+        padding: 0 15px;
+        border-right: 4px solid #556ff7;
+        border-left: 4px solid #556ff7;
+    }
     .catálogo > h2 {
         font-size: 3rem;
         margin: 20px;
+        width: fit-content;
+        padding: 0 15px;
+        border-right: 4px solid #556ff7;
+        border-left: 4px solid #556ff7;
     }
     .catálogo > .categoriaDeProductos {
         margin: 25px 0 25px 0;

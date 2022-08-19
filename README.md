@@ -4,6 +4,8 @@ Este proyecto consiste en crear una landing de negocio. En mi caso me decidí po
 
 Agregué como sección adicional "Marcas populares" donde se muestran algunas de las marcas mas prestigiosas para darle un sello de confianza y seriedad al negocio en el momento de la compra.
 
+[Enlace al despliegue en GitHub Pages](https://franco-odone.github.io/proyecto1M1BUDD/)
+
 
 
 
